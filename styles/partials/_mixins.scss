@@ -1,0 +1,52 @@
+
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content
+  }
+};
+
+
+@mixin desk {
+  @media (min-width: $desktop) {
+    @content
+  }
+};
+
+@mixin label {
+  color: $silver;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding-top: 0.7rem;
+  padding-bottom: 0.4rem;
+}
+
+@mixin showLabel {
+  color: $silver;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+@mixin hover-nav() {
+
+  transition: all 0.5s ease-in;
+  &:active,
+  &:hover,
+  &:focus {
+    transform: scale(1.3);
+    background: rgb(93, 93, 93);
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px rgb(163, 162, 162);
+  }
+};
+
+@mixin colorful {
+  transition: all 0.5s ease;
+ 
+  &:hover,
+  &:active,
+  &:focus {
+    filter: grayscale(0);
+    cursor: pointer;
+  }
+
+}
