@@ -2,7 +2,7 @@
 
 A simple semi-static web page for a music band using HTML, SCSS and JavaScript.
 
-![Preview](https://fallout-site.rag-cloud.hosteur.com/)
+[Preview](https://fallout-site.rag-cloud.hosteur.com/)
 
 ## First Page
 
