@@ -1,0 +1,127 @@
+.App {
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    height: 500px;
+    background-image: url('/path/to/background-image.jpg');
+    background-size: cover;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .two-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+  
+  .two-columns .column {
+    width: calc(50% - 30px);
+    text-align: center;
+  }
+  
+  .two-columns .column img {
+    max-width: 100%;
+  }
+  
+  .three-rows {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+  
+  .three-rows .row {
+    width: calc(33.33% - 20px);
+  }
+  
+  .three-rows .row img {
+    max-width: 100%;
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000;
+  }
+  
+  .footer ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .footer ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .two-columns {
+      flex-direction: column;
+    }
+  
+    .two-columns .column {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  
+    .three-rows {
+      flex-wrap: wrap;
+    }
+  
+    .three-rows .row {
+      width: calc(50% - 20px);
+      margin-bottom: 40px;
+    }
+  }
+  
