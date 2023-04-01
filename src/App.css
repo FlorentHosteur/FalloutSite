@@ -32,7 +32,7 @@
   
   .hero {
     height: 500px;
-    background-image: url('/path/to/background-image.jpg');
+    background-image: url('https://fallout.s3.hosteur.io/sites/header.jpg');
     background-size: cover;
   }
   .hero-content {
