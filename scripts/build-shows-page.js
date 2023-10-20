@@ -11,7 +11,7 @@ const concerts =
   },
   {
     date: "04-11-2023",
-    place: "<a href='https://www.facebook.com/laMHmarseille/' class='show__venue'>Le Maison Hantée</a>",
+    place: "<a href='https://www.facebook.com/laMHmarseille/' class='show__venue'>La Maison Hantée</a>",
     location: "Marseille (France)"
   },
   {
