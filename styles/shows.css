@@ -150,6 +150,11 @@ a {
   color: #FAFAFA;
 }
 
+a.show__venue {
+  text-decoration: none;
+  color: #000000;
+}
+
 .page-head {
   background-color: #323232;
   color: #FFFFFF;

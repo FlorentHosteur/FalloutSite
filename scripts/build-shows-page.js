@@ -6,33 +6,33 @@ const concerts =
 [
   {
     date: "27-10-2023",
-    place: "Le Klub",
+    place: "<a href='https://www.facebook.com/leklubparis/' class='show__venue'>Le Klub</a>",
     location: "Paris (France)"
   },
   {
     date: "04-11-2023",
-    place: "Le Maison Hantée",
+    place: "<a href='https://www.facebook.com/laMHmarseille/' class='show__venue'>Le Maison Hantée</a>",
     location: "Marseille (France)"
   },
   {
     date: "01-12-2023",
-    place: "Le Kjibi",
+    place: "<a href='https://www.facebook.com/LeKJBI/' class='show__venue'>Le KJBI</a>",
     location: "Montpellier (France)"
   },
   {
     date: "27-01-2024",
-    place: "ExtremeCore Fest",
+    place: "<a href='https://www.notikumi.com/2024/1/27/extreme-core-fest' class='show__venue'>ExtremeCore Fest</a>",
     location: "Murcia (Espagne)"
   },
   {
     date: "02-2024",
-    place: "Jas Rod",
+    place: "<a href='https://www.facebook.com/people/JasRod/100057636302207/' class='show__venue'>Jas Rod</a>",
     location: "Pennes-Mirabeau (France)"
   }
 ];
 
 function displayShows() {
-    appendShowList(response.data);
+    appendShowList(concerts);
 }
 
 function appendShowList(response) {
@@ -58,7 +58,7 @@ function appendShowList(response) {
     // add data to venue label
     const venue = document.createElement("h6");
     venue.classList.add("show__venue");
-    venue.innerText = showObj.place;
+    venue.innerHTML = showObj.place;
 
     const venueDiv = document.createElement("div");
     venueDiv.classList.add("show__venueDiv");
