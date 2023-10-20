@@ -2,18 +2,37 @@
 
 const showList = document.getElementById("showList");
 
-const myKey = "53870676-ced4-4dbd-9e31-675986686347";
-const API = "https://project-1-api.herokuapp.com";
+const concerts = 
+[
+  {
+    date: "27-10-2023",
+    place: "Le Klub",
+    location: "Paris (France)"
+  },
+  {
+    date: "04-11-2023",
+    place: "Le Maison Hantée",
+    location: "Marseille (France)"
+  },
+  {
+    date: "01-12-2023",
+    place: "Le Kjibi",
+    location: "Montpellier (France)"
+  },
+  {
+    date: "27-01-2024",
+    place: "ExtremeCore Fest",
+    location: "Murcia (Espagne)"
+  },
+  {
+    date: "02-2024",
+    place: "Jas Rod",
+    location: "Pennes-Mirabeau (France)"
+  }
+];
 
 function displayShows() {
-  axios
-    .get(`${API}/showdates?api_key=${myKey}`)
-    .then(function (response) {
-      appendShowList(response.data);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+    appendShowList(response.data);
 }
 
 function appendShowList(response) {
@@ -60,11 +79,6 @@ function appendShowList(response) {
     locationDiv.appendChild(locationLabel);
     locationDiv.appendChild(location);
 
-    // creat button
-    const myButton = document.createElement("button");
-    myButton.classList.add("show__button");
-    myButton.innerText = "BUY TICKETS";
-
     // create dvider line
     const myLine = document.createElement("div");
     myLine.classList.add("show__divider");
@@ -77,7 +91,6 @@ function appendShowList(response) {
     showItem.appendChild(venueDiv);
 
     showItem.appendChild(locationDiv);
-    showItem.appendChild(myButton);
 
     showList.appendChild(showItem);
   });
